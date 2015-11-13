@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Webcrawler</title>
+   <script type="text/javascript">
+     function inputOnfocus(){
+      var keyWords=document.getElementById("keyWords");
+      if(keyWords.value="Please input keywords"){
+       keyWords.value="";
+       keyWords.style.color="Black";
+      }
+     }
+     
+     function inputOnblur(){
+      var keyWords=document.getElementById("keyWords");
+      if(keyWords.value.length<=0){
+       keyWords.value="Please input keywords";
+       keyWords.style.color="Red";
+      }
+     }
+   </script>
+</head>
+<body>
+<input type="text" id="keyWords"value="Please input keywords" onfocus="inputOnfocus()" onblur="inputOnblur()"  style="color:Gray"/>
+</body>
+</html>
