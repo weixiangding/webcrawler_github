@@ -1,4 +1,4 @@
 Project description:
 
-This project is to creat a webcrawler using Python.
+This project is to create a webcrawler using Python.
 
